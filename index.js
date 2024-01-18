@@ -9,6 +9,7 @@ for (var i=0; i<numberOfDrumButtons; i++) {
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
 
     
     });
@@ -19,6 +20,7 @@ for (var i=0; i<numberOfDrumButtons; i++) {
 document.addEventListener("keypress", function (e) {
     
     makeSound(e.key);
+    buttonAnimation(e.key);
 });
 
 
