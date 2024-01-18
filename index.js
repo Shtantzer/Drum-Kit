@@ -6,11 +6,20 @@ for (var i=0; i<numberOfDrumButtons; i++) {
     
     document.querySelectorAll(".drum")[i].addEventListener("click", function () { 
         
-     var audio = new Audio("sounds/tom-1.mp3");
-     audio.play();
+    var buttonInnerHTML = this.innerHTML;
+
+    console.log(buttonInnerHTML);
+
     
     });
-};
+}
+
+//Detektiranje tipkovnice
+
+document.addEventListener("keypress", function (e) {
+    
+    console.log(e);
+});
 
 
 
